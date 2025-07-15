@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Colors -->
+    <color name="primaryColor">#0077FF</color>
+    <color name="onPrimaryColor">#FFFFFF</color>
+    <color name="outlineColor">#CCD1E4</color>
+
+    <!-- Background Colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="onBackgroundColor">#000000</color>
+
+    <!-- primaryContainer Colors -->
+    <color name="primaryContainer">#D9E2FF</color>
+    <color name="onPrimaryContainer">#001944</color>
+
+
+    <!-- Surface Colors -->
+    <color name="surfaceColor">#EEEDF4</color>
+    <color name="onSurfaceColor">#1A1B20</color>
+
+    <!-- Surface Variant -->
+    <color name="surfaceVariantColor">#E2E2E9</color>
+    <color name="onSurfaceVariantColor">#44464F</color>
+
+    <!-- Other Colors from Figma -->
+    <color name="happyColor">#FFD600</color>
+    <color name="sadColor">#2979FF</color>
+    <color name="angryColor">#FF1744</color>
+    <color name="relaxedColor">#00E676</color>
+    <color name="stressedColor">#FF9100</color>
+    <color name="complexColor">#AB47BC</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#757575</color>
+
+
+    <!-- Happy -->
+    <color name="happy_selected">#FBC02D</color>       <!-- Yellow -->
+    <color name="happy_unselected">#FFF9C4</color>     <!-- Light yellow -->
+
+    <!-- Sad -->
+    <color name="sad_selected">#1976D2</color>         <!-- Blue -->
+    <color name="sad_unselected">#BBDEFB</color>       <!-- Light blue -->
+
+    <!-- Relaxed -->
+    <color name="relaxed_selected">#388E3C</color>     <!-- Green -->
+    <color name="relaxed_unselected">#C8E6C9</color>   <!-- Light green -->
+
+    <!-- Angry -->
+    <color name="angry_selected">#D32F2F</color>       <!-- Red -->
+    <color name="angry_unselected">#FFCDD2</color>     <!-- Light red -->
+
+    <!-- Energetic -->
+    <color name="energetic_selected">#FF6F00</color>   <!-- Orange -->
+    <color name="energetic_unselected">#FFE0B2</color> <!-- Light orange -->
+
+    <!-- Stressed -->
+    <color name="stressed_selected">#7B1FA2</color>    <!-- Purple -->
+    <color name="stressed_unselected">#E1BEE7</color>  <!-- Light purple -->
+
+    <!-- Text colors -->
+    <color name="text_selected">#FFFFFF</color>
+    <color name="text_unselected">#000000</color>
+</resources>

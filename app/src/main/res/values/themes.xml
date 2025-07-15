@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.MoodMeal" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/onPrimaryColor</item>
+
+        <!-- Background colors -->
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/onSurfaceColor</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="colorOnBackground">@color/onBackgroundColor</item>
+
+        <!-- Typography -->
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="buttonStyle">@style/Widget.MoodMeal.Button</item>
+        <!-- Status bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+
+
+        <!-- Material 3 button, text, etc. inherit from colorPrimary -->
+    </style>
+
+    <!-- Final theme to apply -->
+    <style name="Theme.MoodMeal" parent="Base.Theme.MoodMeal">
+
+        <!-- You can override more here if needed -->
+    </style>
+    <style name="Widget.MoodMeal.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/onPrimaryColor</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Headline Medium -->
+    <style name="TextHeadlineMedium">
+        <item name="android:fontFamily">@font/inter_extra_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <!-- Headline Small -->
+    <style name="TextHeadlineSmall">
+        <item name="android:fontFamily">@font/inter_extra_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <!-- Title Large -->
+    <style name="TextTitleLarge">
+        <item name="android:fontFamily">@font/inter_extra_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <!-- Title Medium -->
+    <style name="TextTitleMedium">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Title Small -->
+    <style name="TextTitleSmall">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Label Large -->
+    <style name="TextLabelLarge">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Label Small -->
+    <style name="TextLabelSmall">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <!-- Body Large -->
+    <style name="TextBodyLarge">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Body Small -->
+    <style name="TextBodySmall">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="TextBodyMedium">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

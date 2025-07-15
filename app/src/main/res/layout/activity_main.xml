@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryContainer"
+        android:elevation="4dp"
+        app:menu="@menu/top_app_bar_menu"
+        app:title="MoodMeal"
+        app:titleTextAppearance="@style/TextHeadlineMedium"
+        app:titleTextColor="@color/onPrimaryContainer" />
+
+    <!-- Main content wrapped in ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/mainContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Mood question -->
+            <TextView
+                android:id="@+id/textQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="How are you feeling today?"
+                android:textAppearance="@style/TextTitleMedium"
+                android:textColor="@color/onBackgroundColor"
+                android:textStyle="bold" />
+
+            <!-- Mood Buttons (use Material Buttons) -->
+            <LinearLayout
+                android:id="@+id/moodButtonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.google.android.material.button.MaterialButton xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/buttonHappy"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/happy_unselected"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Happy"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/onBackgroundColor"
+                        app:backgroundTint="#FFF9D8"
+                        app:icon="@drawable/happy"
+                        app:iconGravity="top"
+                        app:iconPadding="0dp"
+                        app:iconSize="56dp"
+                        app:iconTint="@null" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonSad"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Sad"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/onBackgroundColor"
+                        app:backgroundTint="@color/sad_unselected"
+                        app:icon="@drawable/sad"
+                        app:iconGravity="top"
+                        app:iconPadding="0dp"
+                        app:iconSize="56dp"
+                        app:iconTint="@null" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonRelaxed"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Relaxed"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/onBackgroundColor"
+                        app:backgroundTint="@color/relaxed_unselected"
+                        app:icon="@drawable/relaxed"
+                        app:iconGravity="top"
+                        app:iconPadding="0dp"
+                        app:iconSize="56dp"
+                        app:iconTint="@null" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonAngry"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Angry"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/onBackgroundColor"
+                        app:backgroundTint="@color/angry_unselected"
+                        app:icon="@drawable/angry"
+                        app:iconGravity="top"
+                        app:iconPadding="0dp"
+                        app:iconSize="56dp"
+                        app:iconTint="@null" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonEnergetic"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Energetic"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/onBackgroundColor"
+                        app:backgroundTint="@color/energetic_unselected"
+                        app:icon="@drawable/energetic"
+                        app:iconGravity="top"
+                        app:iconPadding="0dp"
+                        app:iconSize="56dp"
+                        app:iconTint="@null" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonStressed"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="Stressed"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                        android:textColor="@color/onBackgroundColor"
+                        app:backgroundTint="@color/stressed_unselected"
+                        app:icon="@drawable/stressed"
+                        app:iconGravity="top"
+                        app:iconPadding="0dp"
+                        app:iconSize="56dp"
+                        app:iconTint="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Meal Suggestions Label -->
+            <TextView
+                android:id="@+id/textMealSuggestionsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Meal Suggestions for 'Happy':"
+                android:textAppearance="@style/TextTitleMedium" />
+
+            <!-- Meal Suggestions List (Vertical LinearLayout) -->
+            <LinearLayout
+                android:id="@+id/mealSuggestionsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@color/backgroundColor"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <!-- Meals will be added dynamically here -->
+            </LinearLayout>
+
+            <!-- Log Meal Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonLogMeal"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:enabled="false"
+                android:text="Log Meal"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:backgroundTint="@null"
+                android:textColor="@color/onPrimaryColor"
+                android:background="@drawable/gradient_background"/>
+
+            <!-- Stats: Total meals logged -->
+            <TextView
+                android:id="@+id/textTotalMealsLogged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Total meals logged: 0"
+                android:textAppearance="@style/TextTitleLarge"
+                android:textColor="@color/primaryColor" />
+
+            <!-- Recent moods logged label -->
+            <TextView
+                android:id="@+id/textRecentMoodsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Recent moods logged:"
+                android:textAppearance="@style/TextLabelLarge"
+                android:textColor="@color/onBackgroundColor"
+                android:textStyle="bold" />
+
+            <!-- Recent moods list (Vertical LinearLayout) -->
+            <LinearLayout
+                android:id="@+id/recentMoodsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
