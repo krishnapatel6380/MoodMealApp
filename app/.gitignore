@@ -13,6 +13,7 @@ app/google-services.json
 /captures
 .externalNativeBuild
 .cxx
+app/google-services.json
 local.properties
 App_Recording/
 *.webm
