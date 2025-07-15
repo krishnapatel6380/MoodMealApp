@@ -9,12 +9,11 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
-
+app/google-services.json
 /captures
 .externalNativeBuild
 .cxx
 local.properties
-
 App_Recording/
 *.webm
 *.mp4
