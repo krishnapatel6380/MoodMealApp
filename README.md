@@ -3,7 +3,7 @@
 MoodMeal is a simple Android app that allows users to log their meals along with their moods.
 The app helps users understand how their eating habits are connected to their emotional wellbeing.
 
-# Key Features:
+## Key Features:
   - Log meals with mood selection
   
   - View the most recent meal even after closing the app (using SharedPreferences)
@@ -16,7 +16,7 @@ The app helps users understand how their eating habits are connected to their em
   
   - Offline support with Firestore caching
 
-# Tech Stack:
+## Tech Stack:
   - Android (Kotlin)
   
   - Firebase Realtime Database for live meal count and recent moods
