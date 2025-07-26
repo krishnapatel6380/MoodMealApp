@@ -26,3 +26,7 @@ The app helps users understand how their eating habits are connected to their em
   - SharedPreferences for local caching of the last meal
   
   - Firebase Firestore Caching for offline access
+
+## Screenshot
+
+![App Screenshot](Screenshots/screenshot.png)
