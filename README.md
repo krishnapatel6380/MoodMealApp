@@ -28,5 +28,14 @@ The app helps users understand how their eating habits are connected to their em
   - Firebase Firestore Caching for offline access
 
 ## Screenshot
+<p align="center">
+  <img src="Screenshot/Screenshot_20250714_174734.png" width="250"/>
+  <img src="Screenshot/Screenshot_20250714_174811.png" width="250"/>
+  <img src="Screenshot/Screenshot_20250714_174839.png" width="250"/>
+  <img src="Screenshot/Screenshot_20250714_174910.png" width="250"/>
+  <img src="Screenshot/Screenshot_20250714_174928.png" width="250"/>
+  <img src="Screenshot/Screenshot_20250714_174838.png" width="250"/>
+  <img src="Screenshot/Screenshot_20250714_174948.png" width="250"/>
+</p>
 
-![App Screenshot](Screenshots/screenshot.png)
+
